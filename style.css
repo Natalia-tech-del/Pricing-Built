@@ -1,0 +1,155 @@
+.header {
+  padding: 140px 0px 55px 0px;
+}
+
+.pricing_title {
+  margin-bottom: 18px;
+  color: #161d25;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 1;
+  text-align: center;
+}
+
+.title_text {
+  padding-right: 10px;
+  color: #5d7085;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1;
+  text-align: center;
+}
+
+.lists {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  min-height: max-content;
+  padding: 15px;
+}
+
+.list_item {
+  list-style: none;
+}
+
+.card {
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr 2fr min-content;
+  gap: 17px;
+  width: 266px;
+  height: 100%;
+  border-radius: 2px;
+  padding: 49px 35px 36px 35px;
+}
+
+.card_yellow {
+  background: linear-gradient(180deg, #fdc624 0%, #e6c434 99.36%);
+}
+
+.card_green {
+  background: linear-gradient(180deg, #55dce7 0%, #3dcad4 100%);
+}
+
+.card_blue {
+  background: linear-gradient(180deg, #6bdfff 0%, #3dacfc 100%);
+}
+
+.card_grey {
+  background: linear-gradient(180deg, #bfcedc 0%, #939fb3 100%);
+}
+
+.image {
+  justify-self: center;
+  align-self: end;
+}
+
+.card_title {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 1;
+}
+
+.card_title_text {
+  margin-bottom: 31px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.price::before {
+  content: "$";
+  position: absolute;
+  top: -4px;
+  left: 0px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.label {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  left: 0;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+}
+
+.label::before {
+  content: url(./images/Path.png);
+  padding-right: 4px;
+}
+
+.price {
+  position: relative;
+  margin-bottom: 15px;
+  padding-left: 12px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 67px;
+  line-height: 1;
+  letter-spacing: -0.1px;
+}
+
+.card_text_list {
+  display: flex;
+  flex-direction: column;
+  gap: 18.5px;
+  padding-left: 15px;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  list-style-image: url(./images/Done.png);
+}
+
+.card_text_list_item {
+  display: list-item;
+  padding-left: 5px;
+}
+
+.button-btn {
+  width: 196px;
+  margin-top: 26px;
+  border: 2px solid;
+  border-color: currentColor;
+  border-radius: 2px;
+  padding: 12px 51px 9px 51px;
+  color: white;
+  text-align: center;
+  background-color: transparent;
+}
+
+.button-btn:hover {
+  color: inherit;
+  background-color: white;
+  mix-blend-mode: screen;
+}
