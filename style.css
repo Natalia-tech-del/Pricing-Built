@@ -2,7 +2,7 @@
   padding: 140px 0px 55px 0px;
 }
 
-.pricing_title {
+.header__title {
   margin-bottom: 18px;
   color: #161d25;
   font-weight: 700;
@@ -11,7 +11,7 @@
   text-align: center;
 }
 
-.title_text {
+.header__text {
   padding-right: 10px;
   color: #5d7085;
   font-weight: 400;
@@ -20,7 +20,7 @@
   text-align: center;
 }
 
-.lists {
+.list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -29,14 +29,14 @@
   padding: 15px;
 }
 
-.list_item {
+.list__item {
   list-style: none;
 }
 
 .card {
   position: relative;
   display: grid;
-  grid-template-rows: 1fr 2fr min-content;
+  grid-template-rows: 138px 1fr min-content;
   gap: 17px;
   width: 266px;
   height: 100%;
@@ -63,17 +63,18 @@
 .image {
   justify-self: center;
   align-self: end;
+  margin-left: -3px;
 }
 
-.card_title {
+.card__title {
   color: #ffffff;
   font-weight: 500;
   font-size: 21px;
   line-height: 1;
 }
 
-.card_title_text {
-  margin-bottom: 31px;
+.card__title-text {
+  margin-bottom: 28px;
   color: #ffffff;
   font-weight: 400;
   font-size: 12px;
@@ -82,13 +83,12 @@
 
 .price::before {
   content: "$";
-  position: absolute;
-  top: -4px;
-  left: 0px;
   color: #ffffff;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
+  vertical-align: top;
+  padding-right: 3px;
 }
 
 .label {
@@ -104,41 +104,39 @@
 }
 
 .label::before {
-  content: url(./images/Path.png);
+  content: url(./images/star.png);
   padding-right: 4px;
 }
 
 .price {
-  position: relative;
-  margin-bottom: 15px;
-  padding-left: 12px;
+  margin-bottom: 10px;
   color: #ffffff;
   font-weight: 700;
   font-size: 67px;
-  line-height: 1;
+  line-height: 1.15;
   letter-spacing: -0.1px;
 }
 
-.card_text_list {
+.card__list {
   display: flex;
   flex-direction: column;
-  gap: 18.5px;
+  gap: 18.7px;
   padding-left: 15px;
   color: white;
   font-weight: 500;
   font-size: 14px;
   line-height: 1;
-  list-style-image: url(./images/Done.png);
+  list-style-image: url(./images/check.png);
 }
 
-.card_text_list_item {
+.card__list-item {
   display: list-item;
   padding-left: 5px;
 }
 
-.button-btn {
+.button {
   width: 196px;
-  margin-top: 26px;
+  margin-top: 37.6px;
   border: 2px solid;
   border-color: currentColor;
   border-radius: 2px;
@@ -146,9 +144,10 @@
   color: white;
   text-align: center;
   background-color: transparent;
+  cursor: pointer;
 }
 
-.button-btn:hover {
+.button:hover {
   color: inherit;
   background-color: white;
   mix-blend-mode: screen;
